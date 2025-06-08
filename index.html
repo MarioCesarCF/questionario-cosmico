@@ -1,55 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Questionario</title>
-    <style>
-      p {
-        font-weight: bold;
-        padding-right: 10px;
-      }
-      #verdadeiro {
-        color: black;
-        background-color: rgb(10, 252, 10);
-      }
-      #falso {
-        color: black;
-        background-color: red;
-      }
-      .correto {
-        color: rgb(10, 252, 10);
-      }
-      .errado {
-        color: red;
-      }
-    </style>
-  </head>
-  <body>
-    <div style="display: flex">
-      <div>
-        <p>QUESTÃO 1</p>
-        <p>Tartarugas são os maiores animais do mundo?</p>
-        <button onclick="errado()" id="verdadeiro">Verdadeiro</button>
-        <button onclick="certo()" id="falso">Falso</button>
-        <h1 id="resposta"></h1>
-      </div>
 
-      <img src="tarta.webp" width="300px" height="150px" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questionario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url('img/img-cosmo.jpg'); background-size: cover;">
+  <header>
+    <h1>Questionário Cósmico</h1>
+  </header>
+  <main>
+    <div id="caixa">
+      <p id="titulo"></p>
+      <p id="enunciado"></p>
+      <img id="imagem" src="" width="300px" height="150px" />
+      <button onclick="errado()" id="verdadeiro">Verdadeiro</button>
+      <button onclick="certo()" id="falso">Falso</button>
     </div>
-  </body>
-  <script>
-    let resposta = document.getElementById('resposta')
-    function certo() {
-      resposta.innerHTML = 'CORRETO'
-      resposta.classList.add('correto')
-      resposta.classList.remove('errado')
-    }
-    function errado() {
-      resposta.innerHTML = 'ERRADO'
-      resposta.classList.remove('correto')
-      resposta.classList.add('errado')
-    }
-  </script>
+  </main>
+</body>
+<script src="script.js">
+</script>
+
 </html>

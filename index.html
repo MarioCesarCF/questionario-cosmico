@@ -18,8 +18,12 @@
       <p id="titulo"></p>
       <p id="enunciado"></p>
       <img id="imagem" src="" width="300px" height="150px" />
-      <button onclick="errado()" id="verdadeiro">Verdadeiro</button>
-      <button onclick="certo()" id="falso">Falso</button>
+      <button onclick="proximo(true)" id="verdadeiro">Verdadeiro</button>
+      <button onclick="proximo(false)" id="falso">Falso</button>
+    </div>
+    <div id="retangulo" style="display: none;">
+      <h1 id="resultado">Score:</h1>
+      <h1 id="score_number"></h1>
     </div>
   </main>
 </body>

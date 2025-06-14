@@ -55,10 +55,26 @@ p {
   background-color: red;
 }
 
-.correto {
-  color: rgb(10, 252, 10);
+#retangulo {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: aliceblue;
+  gap: 1rem;
+  border-radius: 1rem;
+  border: solid 2px black;
+  width: 150px;
+  height: 350px;
+  align-items: center;
 }
 
-.errado {
-  color: red;
+#score_number {
+  font-family: "Oswald";
+  font-size: 80px;
+  margin-top: 30px;
+}
+
+#resultado {
+  font-family: "Oswald";
+  font-size: 40px;
 }
